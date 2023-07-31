@@ -6,7 +6,7 @@ const productos =
         tipo: "Pala",
         desc: "Pala pocera Gheradi",
         precio: 1200,
-        imagen: './public/images/palapunta.png',
+        imagen: './img/palapunta.png',
         cantidad:1
     },
 
@@ -16,7 +16,7 @@ const productos =
         tipo: "Mascara",
         desc: "Mascara para soldar fotovoltaica",
         precio: 500,
-        imagen: './public/images/mascara-soldar.png',
+        imagen: './img/mascara-soldar.png',
         cantidad:1
     },
 
@@ -26,7 +26,7 @@ const productos =
         tipo: "Sargentos",
         desc: "Sargentos para carpinteros de 1 metro y 1.5 metros",
         precio: 900,
-        imagen: './public/images/Sargentos.png',
+        imagen: './img/Sargentos.png',
         cantidad:1
     },
 
@@ -36,7 +36,7 @@ const productos =
         tipo: "llaves",
         desc: "Llaves combinadas boca-anillo",
         precio: 1600,
-        imagen: './public/images/Llaves-fijas.png',
+        imagen: './img/Llaves-fijas.png',
         cantidad:1
     },
 
@@ -46,17 +46,77 @@ const productos =
         tipo: "alicates y pinzas",
         desc: "Alicates y Pinzas de distintas medidas",
         precio: 1200,
-        imagen: './public/images/Alicates.png',
+        imagen: './img/Alicates.png',
         cantidad:1
     },
 
     {
         id: 6,
+        nombre: "Espejos para Motos",
+        tipo: "espejos",
+        desc: "Espejos para motos",
+        precio: 2900,
+        imagen: './img/espejos.jpg',
+        cantidad:1
+    },
+
+    {
+        id: 7,
+        nombre: "Filtro comercial para Refrigeracion",
+        tipo: "refrigeracion",
+        desc: "Filtro para camaras de refrigeracion",
+        precio: 2500,
+        imagen: './img/filtrocomercial.png',
+        cantidad:1
+    },
+
+    {
+        id: 8,
+        nombre: "Motor Heladera 1/4Hp",
+        tipo: "Motor",
+        desc: "Motor para heladera comercial de 1/4Hp",
+        precio: 12000,
+        imagen: './img/motorheladera.jpg',
+        cantidad:1
+    },
+
+    {
+        id: 9,
+        nombre: "Optica Smash 110",
+        tipo: "Optica",
+        desc: "Optica para moto Smash 110",
+        precio: 9000,
+        imagen: './img/optica.jpg',
+        cantidad:1
+    },
+
+    {
+        id: 10,
+        nombre: "Sierra Caladora",
+        tipo: "Sierra",
+        desc: "Sierra Caladora para madera",
+        precio: 35000,
+        imagen: './img/caladora.png',
+        cantidad:1
+    },
+
+    {
+        id: 11,
+        nombre: "Cables para Bujias",
+        tipo: "Cables",
+        desc: "Cables para bujias de autos",
+        precio: 10000,
+        imagen: './img/cablesbujia.png',
+        cantidad:1
+    },
+
+    {
+        id: 12,
         nombre: "Destornilladores",
         tipo: "destornillador",
         desc: "Destornilladores de punta y philips",
         precio: 500,
-        imagen: './public/images/destornillador.png',
+        imagen: './img/destornillador.png',
         cantidad:1
     }
 ];

@@ -5,7 +5,7 @@ const productos =
         nombre: "Pala de Punta",
         tipo: "Pala",
         desc: "Pala pocera Gheradi",
-        precio: 1200,
+        precio: 12000,
         imagen: './img/palapunta.png',
         cantidad:1
     },
@@ -15,7 +15,7 @@ const productos =
         nombre: "Mascara para Soldar",
         tipo: "Mascara",
         desc: "Mascara para soldar fotovoltaica",
-        precio: 500,
+        precio: 9000,
         imagen: './img/mascara-soldar.png',
         cantidad:1
     },
@@ -25,7 +25,7 @@ const productos =
         nombre: "Sargentos para Carpinteros",
         tipo: "Sargentos",
         desc: "Sargentos para carpinteros de 1 metro y 1.5 metros",
-        precio: 900,
+        precio: 9000,
         imagen: './img/Sargentos.png',
         cantidad:1
     },
@@ -45,7 +45,7 @@ const productos =
         nombre: "Alicates y Pinzas",
         tipo: "alicates y pinzas",
         desc: "Alicates y Pinzas de distintas medidas",
-        precio: 1200,
+        precio: 2500,
         imagen: './img/Alicates.png',
         cantidad:1
     },
@@ -65,7 +65,7 @@ const productos =
         nombre: "Filtro comercial para Refrigeracion",
         tipo: "refrigeracion",
         desc: "Filtro para camaras de refrigeracion",
-        precio: 2500,
+        precio: 3500,
         imagen: './img/filtrocomercial.png',
         cantidad:1
     },
@@ -75,7 +75,7 @@ const productos =
         nombre: "Motor Heladera 1/4Hp",
         tipo: "Motor",
         desc: "Motor para heladera comercial de 1/4Hp",
-        precio: 12000,
+        precio: 35000,
         imagen: './img/motorheladera.jpg',
         cantidad:1
     },
@@ -92,10 +92,10 @@ const productos =
 
     {
         id: 10,
-        nombre: "Sierra Caladora",
+        nombre: "Sierra Caladora Makita",
         tipo: "Sierra",
         desc: "Sierra Caladora para madera",
-        precio: 35000,
+        precio: 80000,
         imagen: './img/caladora.png',
         cantidad:1
     },
@@ -115,7 +115,7 @@ const productos =
         nombre: "Destornilladores",
         tipo: "destornillador",
         desc: "Destornilladores de punta y philips",
-        precio: 500,
+        precio: 4000,
         imagen: './img/destornillador.png',
         cantidad:1
     }

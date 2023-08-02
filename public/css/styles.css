@@ -153,6 +153,16 @@ select {
   background-color: white;
 }
 
+.modal-carrito #btn1 {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+  color: rgb(225, 76, 65) !important;
+  border: none;
+  background-color: white;
+}
+
 .modal-carrito #btn-cerrar-carrito:hover {
   cursor: pointer;
 }

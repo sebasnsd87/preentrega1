@@ -21,3 +21,37 @@ modalCarrito.addEventListener('click', (e) => {
         eliminarProductoCarrito(e.target.value)
     }
 })
+
+const btn1 = document.getElementById('btn1')
+
+btn1.addEventListener('click', () => {
+  Swal.fire({
+    position: 'top-start',
+    icon: 'success',
+    title: 'GRACIAS POR SU COMPRA',
+    showConfirmButton: false,
+    timer: 2000
+  })
+})
+
+const btn2 = document.getElementById('btn2')
+
+btn2.addEventListener('click', () => {
+  Swal.fire({
+    title: 'Esta seguro?',
+    text: "Se va a vaciar el carrito!",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'SI',
+    cancelButtonText: 'NO'
+  }).then((result) => {
+    if (result.isConfirmed) {
+      Swal.fire(
+        'Se vacio el carrito',
+        'success'
+      )
+    }
+  })
+})

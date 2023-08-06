@@ -30,7 +30,7 @@ btn1.addEventListener('click', () => {
     icon: 'success',
     title: 'GRACIAS POR SU COMPRA',
     showConfirmButton: false,
-    timer: 2000
+    timer: 1500
   })
 })
 

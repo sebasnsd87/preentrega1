@@ -26,14 +26,26 @@ const btn1 = document.getElementById('btn1')
 
 btn1.addEventListener('click', () => {
   Swal.fire({
-    position: 'top-start',
-    icon: 'success',
-    title: 'GRACIAS POR SU COMPRA',
-    showConfirmButton: false,
-    timer: 1500
+    title: 'Desea confirmar su compra?',
+    text: "SE VA A REALIZAR EL PAGO!",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'SI',
+    cancelButtonText: 'NO'
+  }).then((result) => {
+    if (result.isConfirmed) {
+      carrito = []
+      pintarCarrito(carrito)
+      actualizarTotalesCarrito(carrito)
+      Swal.fire(
+        'COMPRA REALIZADA',
+        'success'
+      )
+    }
   })
 })
-
 const btn2 = document.getElementById('btn2')
 
 btn2.addEventListener('click', () => {
@@ -48,6 +60,9 @@ btn2.addEventListener('click', () => {
     cancelButtonText: 'NO'
   }).then((result) => {
     if (result.isConfirmed) {
+      carrito = []
+      pintarCarrito(carrito)
+      actualizarTotalesCarrito(carrito)
       Swal.fire(
         'Se vacio el carrito',
         'success'

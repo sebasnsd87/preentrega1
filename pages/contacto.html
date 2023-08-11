@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ferreteria Emilio</title>
+        <!--Favicon-->
+        <link rel="icon" type="image/png" href="./img/favicon.png">
+        <!--Sweet alert---->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="./public/css/styles.css">
+        <!-- CSS only bootstrap -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      </head>
+      <header>
+
+        <!--Navbar-->
+        <section class="navegador">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a href="../index.html" target="_blank"><img src="../img/logoindex.png"
+                alt="Icono Ferre"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./pages/contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Acerca de Nosotros</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Productos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Ferreteria</a></li>
+                      <li><a class="dropdown-item" href="#">Pinturas</a></li>
+                      <li><a class="dropdown-item" href="#">Repuestos de Autos</a></li>
+                      <li><a class="dropdown-item" href="#">Repuestos de Motos</a></li>
+                      <li><a class="dropdown-item" href="#">Repuestos de Bicicletas</a></li>
+                      <li><a class="dropdown-item" href="#">Repuestos de Refrigeracion</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <button id="cesta-carrito"><i class="fas fa-shopping-cart"></i><span id="contador-carrito">0</span></button>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </section>
+        <!--Comenzamos-->
+        <section class="frente">
+          <img src="../img/EmilioContacto-200.png" alt="logocontacto">
+      </section>
+      <section class="tituloTienda">
+        <h1>TIENDA ONLINE</h1>
+      </section>
+      </header>
+<body>
+    <section>
+        <form class="flexbox-contac" id="registration-form" onsubmit="return enviarCorreoDeConfirmacion(event)">
+            <div class="box-contac">
+              <!--label for="from_name">Ingrese su nombre</label>
+              <input type="text" placeholder="Ingrese su nombre" id="nombre" /-->
+              <label for="nombre">ingrese su nombre</label>
+              <input type="text" name="nombre" placeholder="nombre" id="nombre">
+            </div>
+            <div class="box-contac">
+              <label for="email">ingrese su mail</label>
+              <input type="text" name="email" placeholder="email" id="email">
+              <!--label for="email">Ingrese su email</label>
+              <input type="email" placeholder="Ingrese su email" id="email" /-->
+            </div>
+            <div class="box-contac">
+              <label for="tel">ingrese su telefono</label>
+              <input type="text" name="tel" placeholder="telefono" id="tel">
+              <!--label for="tel">Ingrese su teléfono</label>
+              <input type="phone" placeholder="Teléfono" id="tel" /-->
+            </div>
+            <div class="box-contac">
+              <input type="checkbox" id="check" />
+              <label for="check">Acepto terminos y condiciones</label>
+            </div>
+            <!-- Agrega el resto de los campos del formulario aquí -->
+            <div class="button">
+              <button type="submit">Enviar formulario</button>
+              <button type="reset">Limpiar formulario</button>
+            </div>
+            <textarea name="comentario" rows="5" cols="85" class="text-area" id="comentario">Escribe aquí tu comentario:</textarea>
+          </form>
+    </section>    
+</body>
+</html>
+

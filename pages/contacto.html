@@ -9,13 +9,11 @@
         <link rel="icon" type="image/png" href="../img/favicon.png">
         <!--EmailJS-->
         <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-        </script>
-        <script type="text/javascript">
-        (function(enviarCorreoDeConfirmacion){
-        emailjs.init("4bbCK443WVaRgg872");
-        })();
-        </script>
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+      
+      <script type="text/javascript">
+        emailjs.init('4bbCK443WVaRgg872')
+      </script>
         <!--Sweet alert---->
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -79,37 +77,27 @@
       </header>
 <body>
     <section>
-        <form class="flexbox-contac" id="registration-form" onsubmit="return enviarCorreoDeConfirmacion(event)">
-            <div class="box-contac">
-              <!--label for="from_name">Ingrese su nombre</label>
-              <input type="text" placeholder="Ingrese su nombre" id="nombre" /-->
-              <label for="nombre">Ingrese su Nombre</label>
-              <input type="text" name="nombre" placeholder="nombre" id="nombre">
-            </div>
-            <div class="box-contac">
-              <label for="email">Ingrese su Email</label>
-              <input type="text" name="email" placeholder="email" id="email">
-              <!--label for="email">Ingrese su email</label>
-              <input type="email" placeholder="Ingrese su email" id="email" /-->
-            </div>
-            <div class="box-contac">
-              <label for="tel">Ingrese su telefono</label>
-              <input type="text" name="tel" placeholder="telefono" id="tel">
-              <!--label for="tel">Ingrese su teléfono</label>
-              <input type="phone" placeholder="Teléfono" id="tel" /-->
-            </div>
-            <div class="box-contac">
-              <input type="checkbox" id="check" />
-              <label for="check">Acepto terminos y condiciones</label>
-            </div>
-            <!-- Agrega el resto de los campos del formulario aquí -->
-            <div class="button">
-              <button type="submit">Enviar formulario</button>
-              <button type="reset">Limpiar formulario</button>
-            </div>
-            <textarea name="comentario" rows="5" cols="85" class="text-area" id="comentario">Escribe aquí tu comentario:</textarea>
-          </form>
-    </section>    
+      <form id="form">
+        <div class="field">
+          <label for="nombre">Nombre:</label>
+          <input type="text" name="nombre" id="nombre">
+        </div>
+        <div class="field">
+          <label for="email">Email:</label>
+          <input type="text" name="email" id="email">
+        </div>
+        <div class="field">
+          <label for="tel">Telefono:</label>
+          <input type="text" name="tel" id="tel">
+        </div>
+        <div class="field">
+          <label for="texarea">Deje su mensaje:</label>
+          <input type="text" name="texarea" id="texarea">
+        </div>
+        <input type="submit" id="button" value="Enviar Email" >
+      </form>
+    </section>   
+    <script src="../js/contacto.js"></script> 
 </body>
 </html>
 

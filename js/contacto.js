@@ -98,7 +98,7 @@ function obtenerContactosLocalStorage() {
   return contactosJSON ? JSON.parse(contactosJSON) : [];
 }
 
-const btnEnviar = document.getElementById('button');
+const btnEnviar = document.getElementById('btnEnviar');
 
 btnEnviar.addEventListener('click', () => {
   Swal.fire({

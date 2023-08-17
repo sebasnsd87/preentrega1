@@ -3,7 +3,7 @@
 
 
 
-document.getElementById('form')
+/*document.getElementById('form')
  document.addEventListener('submit', function(event) {
    event.preventDefault();
 
@@ -26,10 +26,10 @@ document.getElementById('form')
     }, (err) => {
       btnEnviar.value = 'Send Email';
       alert(JSON.stringify(err));
-    });*/
-  })
+    });
+  })*/
 
-document.addEventListener('DOMContentLoaded', function() {
+/*document.addEventListener('DOMContentLoaded', function() {
   const registrationForm = document.getElementById('registration-form');
   
   if (registrationForm) {
@@ -108,4 +108,41 @@ btnEnviar.addEventListener('click', () => {
     showConfirmButton: false,
     timer: 1500
   })
-})
+})*/
+
+let formulario = document.getElementById("formulario");
+
+formulario.addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  let nombre = document.getElementById("nombre").value;
+  let email = document.getElementById("email").value;
+  let mensaje = document.getElementById("mensaje").value;
+
+  let parametros = {
+    nombre: nombre,
+    email: email,
+    mensaje: mensaje
+  };
+
+  emailjs.send("default_service", "template_5d3862p", parametros)
+    .then(function(response) {
+      Toastify({
+        text: "Se envio el Email!",
+        duration: 3000,
+        destination: "https://github.com/apvarun/toastify-js",
+        newWindow: true,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "left", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "linear-gradient(to right, #00b09b, #96c93d)",
+        },
+        onClick: function(){} // Callback after click
+      }).showToast();
+    });
+    document.getElementById("nombre").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("mensaje").value = "";
+});

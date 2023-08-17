@@ -12,32 +12,6 @@ header {
       height: 50%;
       text-align: center;
     }
-    .carro{
-      width: 100%;
-      height: 200px;
-      padding: 20px;
-        .carousel-inner{
-          width: 100%;
-          height: 200px;
-          border: 2px solid;
-          border-radius: 5px;
-          padding: 20px;
-          .carousel-item{
-              img{
-                  width: 100%;
-                  height: 180px;
-                  }
-          }
-        }
-        .carousel-control-next{
-          width: 10%;
-          height: 200px;
-        }
-        .carousel-control-prev{
-          width: 10%;
-          height: 200px;
-        }
-    }
     .tituloTienda{
       margin: 5px;
       padding: 5px;
@@ -56,21 +30,36 @@ header {
     }
 }
 
-.contacto-main{
-  background-color: aliceblue;
+.dejanos{
+  text-align: center;
+  font-family: 'DynaPuff', cursive;
+  font-size: 20px;
+  margin: 10px;
 }
 
-.ubicacion{
+.nolan{
+  background-color: black;
+  text-align: center;
+  font-family: 'DynaPuff', cursive;
+  color: blanchedalmond;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.abuela{
+   border:solid black 5px;
+   width: 200px;
+   margin: 5px;
+   padding: 5px;
+   display: flex;
+   justify-content: center;
+}
+
+footer{
   width: 100%;
   margin: 5px;
   padding: 5px;
-}
-
-.contacto{
-  width: 50%;
-  margin: 5px;
-  padding: 5px;
-  border: black solid 5px ;
 }
 
       

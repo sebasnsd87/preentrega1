@@ -2,110 +2,154 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ferreteria Emilio</title>
-  <!--Favicon-->
-  <link rel="icon" type="image/png" href="./img/favicon.png">
-  <!--Sweet alert---->
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <!-- CSS only bootstrap -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-<!--CSS-->
-<link rel="stylesheet" href="./public/css/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FERRETERIA EMILIO | Todo lo que buscas en un solo lugar!</title>
+    <!--FAVICON-->
+    <link rel="icon" type="image/png" href="./img/favicon.png">
+    <!--KEYWORDS-->
+    <meta name="keywords"
+        content="ferreteria, herramientas, pinturas, repuestos de autos, repuestos de motos, repuestos de bicicletas, refrigeracion, carpinteria, bulones, rulemanes, lijas, pinceles, rodillos, thinner, pasajes de omnibus, cargas virtuales, crucero del norte, singer, via bariloche">
+    <!--DESCRIPCION-->
+    <meta name="description"
+        content="Negocio familiar con 36 años de experiencia en el rubro, encontraras diferentes productos para el hogar, tu auto, bicicleta o moto">
+    <!--PROTOCOLO OPEN GRAPH-->
+    <meta property="og:type" content="Web site">
+    <meta property="og:title" content="FERRETERIA EMILIO | Todo lo que buscas en un solo lugar!">
+    <meta property="og:url" content="https://ferreteria-emilio.netlify.app/">
+    <meta property="og:image" content="https://ferreteria-emilio.netlify.app/img/EmilioLogo-400.png">
+    <meta property="og:description"
+        content="Negocio familiar con 36 años de experiencia en el rubro, encontraras diferentes productos para el hogar, tu auto, bicicleta o moto">
+    <!-- CSS only bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="./public/css/styles.css">
 </head>
+
+<!--COMENZAMOS!!!!-->
 
 <body>
 
-  <header>
+    <!-------------------APLICACION DE GRID CON GRID AREAS--------------------------->
 
-    <!--Navbar-->
-    <section class="navegador">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a href="./index.html"><img src="./img/logoindex.png"
-            alt="Icono Ferre"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./pages/contacto.html">Contacto</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Acerca de Nosotros</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Productos
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Ferreteria</a></li>
-                  <li><a class="dropdown-item" href="#">Pinturas</a></li>
-                  <li><a class="dropdown-item" href="#">Repuestos de Autos</a></li>
-                  <li><a class="dropdown-item" href="#">Repuestos de Motos</a></li>
-                  <li><a class="dropdown-item" href="#">Repuestos de Bicicletas</a></li>
-                  <li><a class="dropdown-item" href="#">Repuestos de Refrigeracion</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <button id="cesta-carrito"><i class="fas fa-shopping-cart"></i><span id="contador-carrito">0</span></button>
-              </li>
-            </ul>
+    <div class="grid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">INICIO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/productos.html">PRODUCTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/servicios.html">SERVICIOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/acercade.html">ACERCA DE</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
             <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
             </form>
-          </div>
-        </div>
-      </nav>
-    </section>
-    <!--Comenzamos-->
-    <section class="frente">
-      <img src="./img/EmilioLogo-400.png" alt="logoferre">
-  </section>
-  <section class="tituloTienda">
-    <h1>TIENDA ONLINE</h1>
-    
-  </section>
-  </header>
+        </nav>
+        <header class="hero">
+            <section class="frente">
+                <img src="./img/EmilioLogo-400.png" alt="logoferre">
+            </section>
+            <section class="ferre">
+                <div class="ferre__titulo">
+                    <h1>FERRETERIA Y REPUESTOS EMILIO!!!</h1>
+                    <h2>TODO LO QUE BUSCAS EN UN SOLO LUGAR!!</h2>
+                    <p> Tenemos 37 años de experiencia en el rubro, si no lo tenemos te lo
+                        conseguimos!!
+                    </p>
+                </div>
+            </section>
+        </header>
+        <aside class="aside">
+            <img src="./img/collage2.png" alt="collage">
+        </aside>
+        <main class="main">
+            <section class="carro">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/bahconuevo.png" class="d-block w-100" alt="bahco">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/gherardi.png" class="d-block w-100" alt="biassoni">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/LOGO-DAIHATSU.png" class="d-block w-100" alt="hamilton">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+        </main>
 
-  <main id="producto-contenedor">
+        <!--PIE DE PAGINA CON ENLACES-->
 
-
-
-    
-  </main>
-
-  <div class="modal-contenedor">
-    <div class="modal-carrito">
-      <h3>Carrito</h3>
-      <button id="btn-cerrar-carrito"><i class="fas fa-times-circle"></i></button>
-      <div id="carrito-contenedor">
-        
-      </div>
-      <p class="precioProducto">Precio total: $<span id="precio-total"></span></p>
-      <div class="d-grid gap-2 d-md-block">
-        <button id="btn1" class="btn btn-primary" type="button">COMPRAR</button>
-        <button id="btn2" class="btn btn-secondary" type="button">VACIAR</button>
-      </div>
+        <footer class="footer">
+            <section class="piedepagina">
+                <a href="https://es-la.facebook.com/" target="_blank"><img src="./img/facebook.png"
+                        alt="Icono Facebook"></a>
+                <a href="https://services.tochat.be/es/api/business/send/0eb27634-f70f-4b4a-bde5-ad7ed90abb95"
+                    target="_blank"><img src="./img/whatsapp.png" alt="Icono Whatsapp"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram.png"
+                        alt="Icono Instagram"></a>
+            </section>
+            <section class="piedepagina__titulo">
+                <h2>ACEPTAMOS TODAS LAS TARJETAS Y METODOS DE PAGO</h2>
+            </section>
+            <section class="tarjetas">
+                <img src="./img/tarjetasnuevologo.png" alt="tarjetas">
+            </section>
+            <section class="navegacion">
+                <ul class="navegacion__lista">
+                    <li><a href="./index.html">INICIO</a></li>
+                    <li><a href="./pages/acercade.html">ACERCA DE NOSOTROS</a></li>
+                    <li><a href="./pages/contacto.html">CONTACTO</a></li>
+                    <li><a href="./pages/productos.html">PRODUCTOS</a></li>
+                    <li><a href="./pages/servicios.html">SERVICIOS</a></li>
+                </ul>
+                <h6>Copyright®2023 SERVIOWEB</h6>
+            </section>
+        </footer>
     </div>
-  </div>
-
-  <script src="./data/stock.js"></script>
-  <script src="./js/modal.js"></script>
-  <script src="./js/cart.js"></script>
-  <script src="./js/home.js"></script>
-  <script src="./js/index.js"></script>
-  <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  
-  <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

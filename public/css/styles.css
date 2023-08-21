@@ -6,46 +6,158 @@
   box-sizing: border-box;
 }
 
-header {
-    .frente {
-      width: 100%;
-      height: 50%;
-      text-align: center;
-    }
-    .tituloTienda{
-      margin: 5px;
-      padding: 5px;
-      font-family: 'DynaPuff', cursive;
-      font-size: 400;
-      text-align: center;
-      color: black;
-    }
-    .navegador {
-      .navbar{
-        padding: 35px;
-      }
-      .nav-link{
-        font-family: 'DynaPuff', cursive;
-      }
-      .dropdown-item{
-        font-family: 'DynaPuff', cursive;
-      }
-    }
-}
-
-footer{
+.grid{
   width: 100%;
-  margin: 5px;
-  padding: 5px;
+  margin: 0 auto;
+  /*HABILITO GRILLA*/
+  display: grid;
+  /*DECLARO FILAS Y COLUMNAS*/
+  grid-template-rows: 80px 550px 210px 90px;
+  grid-template-columns: repeat(3,1fr);
+
+  /*DECLARO AEREAS*/
+  grid-template-areas: 
+  "nav nav nav"
+  "header header aside"
+  "main main main"
+  "footer footer footer"
+  ;
+
 }
 
-      
+.catalogo{
+  border: 4px black solid;
+  margin: 3px;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows:250px 250px ;
+}
+
+/*MAIN*/
+
+.grid{
+  width: 100%;
+  height: 600px;
+}
+
+.navbar{
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(213, 218, 218);
+}
+
+.form-control{
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.btn{
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+
+.hero{
+  grid-area: header;
+  background-color: rgb(213, 218, 218);
+  text-align: center;
+}
+
+.tituloMain{
+  width: 100%;
+  text-align: center;
+  background-color: rgb(213, 218, 218);
+}
+
+.frente{
+  text-align: center;
+  width: 100%;
+  height: 320px;
+  
+}
+
+.frente img{
+  width: 90%;
+  height: 320px;
+}
+
+.frente__productos{
+  text-align: center;
+}
+
+.ferre{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  font-style: italic;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  padding: 10px
+}
+
+.ferre h3{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  font-style: italic;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  padding: 10px;
+}
+
+.ferre p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  padding: 10px;
+}
+
+.aside{
+  grid-area: aside;
+  background-color: rgb(213, 218, 218);
+  
+}
+
+.aside img{
+  width: 100%;
+  height: 300px;
+}
+
+
+.main{
+  grid-area: main;
+  background-color: rgb(213, 218, 218);
+  width: 100%;
+  height: 220px;
+  margin: 0;
+}
+
+.mensaje{
+  display: flex;
+  justify-content: center;
+}
+
+.dejanos{
+  text-align: center;
+  font-family: 'DynaPuff', cursive;
+  font-size: 20px;
+  margin: 10px;
+}
+
 #cesta-carrito {
   border: none;
   color: black;
   font-size: 15px;
   background-color: white;
   transition: all .3s;
+}
+
+.fas{
+  padding: 10px;
 }
 
 #cesta-carrito:hover {
@@ -74,18 +186,20 @@ p {
 }
 
 .card {
-  max-width: 250px;
+  max-width: 30%;
   padding: 10px;
-  display: flex;
-  justify-content:space-between;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  background-color: rgb(213, 218, 218);
+  -webkit-box-shadow: 11px 11px 15px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 11px 11px 15px 0px rgba(0,0,0,0.75);
+  box-shadow: 11px 11px 15px 0px rgba(0,0,0,0.75);
 }
 
 select {
   display: inline;
   text-align: center;
-  border: 1px solid rgb(3, 43, 69);
+  border: 1px solid lightskyblue;
 }
 
 .modal-contenedor {
@@ -139,7 +253,7 @@ select {
   background-color: white;
 }
 
-.modal-carrito #btn {
+.modal-carrito #btn1 {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -195,4 +309,984 @@ select {
 
 .boton-eliminar:focus {
   outline: none;
+}
+
+
+.carousel-inner{
+  width: 100%;
+  height: 200px;
+  border: 2px black solid;
+  border-radius: 5px;
+}
+
+.carousel-item img{
+  width: 500px;
+  height: 200px;
+  justify-items: center;
+}
+
+.nosotros{
+  background-color: rgb(213, 218, 218);
+  font-family: 'Montserrat', sans-serif;
+  font-style: semibold;
+  text-align: center;
+}
+
+.servicios{
+  background-color: rgb(213, 218, 218);
+  text-align: center;
+}
+
+.carro{
+  width: 100%;
+  height: 200px;
+}
+
+
+.contacto-main h2{
+  text-align: center;
+  background-color: rgb(213, 218, 218) ;
+}
+
+
+.mensaje div{
+  color: black;
+  display: flex;
+  justify-content:center;
+  background-color: rgb(213, 218, 218) ;
+}
+
+.mensaje div label{
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.ubicacion iframe{
+  width: 100%;
+}
+
+.contenedor{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+  background-color: rgb(213, 218, 218) ;
+}
+
+.servicios div:hover{
+  transform: scale(1.1);
+}
+
+.servicios_contenedor{
+  width: 100%;
+  background-color: rgb(213, 218, 218) ;
+}
+
+.servicios h2{
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  text-align: center;
+  background-color: rgb(213, 218, 218);
+}
+
+.servicios div{
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: rgb(213, 218, 218);
+  -webkit-box-shadow: 11px 11px 15px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 11px 11px 15px 0px rgba(0,0,0,0.75);
+  box-shadow: 11px 11px 15px 0px rgba(0,0,0,0.75);
+}
+
+.servicios img{
+  width: 100%;
+  height: 150px;
+}
+
+/*---------FOOTER------------*/
+
+.footer{
+  grid-area: footer;
+  background-color: rgb(213, 218, 218);
+  width: 100%;
+  height: 400px;
+  margin: 0;
+}
+
+footer div img{
+  margin: 0;
+  width: 100%;
+  padding: 10px;
+}
+
+footer div{
+  background-color: rgb(213, 218, 218);
+}
+
+.tarjetas img{
+  width: 90%;
+  height: 100vw;
+  display: flex;
+  align-items: center;
+}
+
+
+footer div h2{
+  font-family: 'Montserrat', sans-serif;
+  width: 600;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  padding: 20px;
+}
+
+
+.navegacion{
+  font-family: 'Montserrat', sans-serif;
+  width: 600;
+  padding: 20px;
+  text-align: center;
+}
+
+.navegacion__lista ul li{
+  list-style: none;
+  display: inline;
+  margin: 20px 10px 20px 10px;
+  padding: 10px;
+}
+
+.navegacion__lista ul li a{
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.piedepagina{
+  display: flex;
+  justify-content:space-around;
+  height: 100px;
+}
+
+.piedepagina a:hover{
+  transform: scale(1.1);
+}
+
+
+/*------MEDIA QUERYS--------*/
+
+@media screen and (max-width:1200px){
+
+  .catalogo{
+      width: 100%;
+      height: 750px;
+      border: 4px black solid;
+      margin: 3px;
+      border-radius: 5px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows:250px;
+  }
+
+  .catalogo div{
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+      background-color: rgb(213, 218, 218);
+      -webkit-box-shadow: 11px 11px 15px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 11px 11px 15px 0px rgba(0,0,0,0.75);
+  box-shadow: 11px 11px 15px 0px rgba(0,0,0,0.75);
+  }
+
+  .catalogo div h4{
+      display: flex;
+      justify-content: center;
+  }
+  
+  
+  .catalogo img{
+      width: 100%;
+      height: 140px;
+      display: flex;
+      align-items: first baseline;
+  }
+  
+  
+  .catalogo__contenedor-1 a{
+      width: 100%;
+      height: 20px;
+      background-color: rgb(206, 138, 55);
+      color: black;
+      font-family: 'Montserrat', sans-serif;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+  }
+
+  .catalogo__contenedor-1 img{
+      width:  100%;
+      height: 150px;
+
+  }
+  
+  .catalogo__contenedor-1 h4{
+      width: 100%;
+      height: 30px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      background-color: rgb(206, 138, 55);
+      display: flex;
+      align-items:flex-start;
+  }
+  .catalogo__contenedor-2 a{
+      width: 100%;
+      height: 20px;
+      background-color: rgb(206, 138, 55);
+      color: black;
+      font-family: 'Montserrat', sans-serif;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+  }
+  
+  .catalogo__contenedor-2 h4{
+      font-family: 'Montserrat', sans-serif;
+      background-color: rgb(206, 138, 55);
+  }
+
+  .catalogo__contenedor-2 img{
+      width:  100%;
+      height: 145px;
+
+  }
+
+  .catalogo__contenedor-3 img{
+      width:  100%;
+      height: 160px;
+
+  }
+  
+  
+  .catalogo__contenedor-3 a{
+      width: 100%;
+      height: 20px;
+      background-color: rgb(206, 138, 55);
+      color: black;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+  }
+  
+  .catalogo__contenedor-3 h4{
+      width: 100%;
+      height: 25px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 18px;
+      background-color: rgb(206, 138, 55);
+  }
+  
+  
+  
+  .catalogo__contenedor-4 a{
+      width: 100%;
+      height: 20px;
+      background-color: rgb(206, 138, 55);
+      color: black;
+      font-family: 'Montserrat', sans-serif;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+  }
+
+  .catalogo__contenedor-4 img{
+      width:  100%;
+      height: 145px;
+
+  }
+  
+  .catalogo__contenedor-4 h4{
+      font-family: 'Montserrat', sans-serif;
+      background-color: rgb(206, 138, 55);
+  }
+  
+  
+  .catalogo__contenedor-5 a{
+      width: 100%;
+      height: 20px;
+      background-color: rgb(206, 138, 55);
+      color: black;
+      font-family: 'Montserrat', sans-serif;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+  }
+  
+  .catalogo__contenedor-5 h4{
+      width:  100%;
+      height: 25px;
+      font-family: 'Montserrat', sans-serif;
+      background-color: rgb(206, 138, 55);
+  }
+
+  .catalogo__contenedor-5 img{
+      width:  100%;
+      height: 155px;
+
+  }
+  
+  
+  .catalogo__contenedor-6 a{
+      width: 100%;
+      height: 20px;
+      background-color: rgb(206, 138, 55);
+      color: black;
+      font-family: 'Montserrat', sans-serif;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+  }
+  
+  .catalogo__contenedor-6 h4{
+      font-family: 'Montserrat', sans-serif;
+      background-color: rgb(206, 138, 55);
+  }
+
+  .catalogo__contenedor-6 img{
+      width:  100%;
+      height: 145px;
+
+  }
+  
+
+}
+
+@media screen and (max-width:990px) {
+  .grid{
+      width: 100%;
+      /*margin: 0;*/
+      display: grid;
+      grid-template-rows: 60px 530px 270px 220px 300px;
+      grid-template-columns: repeat(2,1fr);
+      grid-template-areas: 
+      "nav nav"
+      "header header"
+      "aside aside"
+      "main main"
+      "footer footer"
+      ;
+  }
+
+  .frente{
+      width: 100%;
+      height: 340px;
+  }
+
+  .frente img{
+      width: 100%;
+      height: 370px;
+  }
+
+  .aside img{
+      width: 100%;
+      height: 250px;
+  }
+
+  .ferre h2{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 25px;
+      font-style: italic;
+      text-decoration: none;
+      text-align: center;
+      color: black;
+      padding: 10px;
+  }
+
+  .ferre h3{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 25px;
+      font-style: italic;
+      text-decoration: none;
+      text-align: center;
+      color: black;
+      padding: 10px;
+  }
+
+  .ferre p{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      font-style: italic;
+      text-decoration: none;
+      text-align: center;
+      color: black;
+      padding: 10px;
+  }
+
+  .encabezado__lista{
+      list-style: none;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      font-style: italic;
+      margin: 1px;
+      padding: 1px;
+      text-align: center;
+      background-color: rgb(213, 218, 218);
+  }
+
+  .tarejtas img{
+      width: 100px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+  }
+
+
+  .navegacion{
+      list-style-position: inside;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      font-style: italic;
+      display:inline;
+      margin: 5px;
+      padding: 5px;
+      background-color: rgb(213, 218, 218);
+  }
+  
+  footer div h2{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      font-style: italic;
+      width: 100;
+      text-decoration: none;
+      text-align: center;
+      color: black;
+      padding: 10px;
+      
+  }
+
+  .footer{
+      width: 100%;
+      height: 300px;
+      background-color: rgb(213, 218, 218);
+  }
+  
+}
+
+@media screen and (max-width:850px){
+
+  .frente__productos{
+      width: 100%;
+      height: 200px;
+  }
+
+  .encabezado__lista{
+      list-style: none;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      font-style: italic;
+      margin: 1px;
+      padding: 1px;
+      text-align: center;
+      background-color: rgb(213, 218, 218);
+  }
+
+  .ferre h2{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      font-style: italic;
+      width: 100;
+      text-decoration: none;
+      text-align: center;
+      color: black;
+      padding: 10px;
+  }
+
+  .ferre h3{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      font-style: italic;
+      width: 100;
+      text-decoration: none;
+      text-align: center;
+      color: black;
+      padding: 10px;
+  }
+
+  .tarejtas img{
+      width: 100%;   
+  }
+
+  .piedepagina{
+      height: 90px;
+  }
+  .piedepagina img{
+      height: 60px;
+  }
+
+  .navegacion{
+      list-style-position: inside;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      font-style: italic;
+      display:inline;
+      margin: 5px;
+      padding: 5px;
+      background-color: rgb(213, 218, 218);
+  }
+  
+  footer div h2{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      font-style: italic;
+      width: 100;
+      text-decoration: none;
+      text-align: center;
+      color: black;
+      padding: 10px;
+      
+  }
+
+  .footer{
+      width: 100%;
+      background-color: rgb(213, 218, 218);
+  }
+}
+
+
+
+
+
+@media screen and (max-width:550px){
+  .grid{
+      width: 100%;
+      margin: 0;
+      display: grid;
+      grid-template-rows: 60px 550px 270px 220px 300px;
+      grid-template-columns: repeat(2,1fr);
+      grid-template-areas: 
+      "nav nav"
+      "header header"
+      "aside aside"
+      "main main"
+      "footer footer"
+      ;
+  }
+
+  .frente{
+      width: 100%;
+      height: 340px;
+  }
+
+  .frente img{
+      width: 100%;
+      height: 350px;
+      padding: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+
+  .frente__productos{
+      width: 100%;
+      height: 200px;
+  }
+
+  .encabezado{
+      list-style:none;
+      font-family: 'Montserrat', sans-serif;
+      font-style: italic;
+      padding: 5px;
+      width: 100%;
+      height: 200px;
+      background-color: rgb(213, 218, 218);
+      text-align: center;
+      
+  }
+
+  .encabezado{
+      width: 100%;
+      height: 100px;
+  }
+
+  .encabezado__lista li{
+      display: inline;
+      margin: 10px 10px 10px 10px;
+  }
+  
+  .encabezado__lista a{
+      text-decoration:none;
+      color: black;
+  }
+  
+  .ferre h2{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      font-style: italic;
+      width: 100;
+      text-decoration: none;
+      text-align: center;
+      color: black;
+      padding: 10px;
+  }
+
+  .ferre h3{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      font-style: italic;
+      width: 100;
+      text-decoration: none;
+      text-align: center;
+      color: black;
+      padding: 10px;
+  }
+
+  .tarejtas img{
+      width: 100%;
+      
+      
+  }
+
+  .footer{
+      width: 100%;
+      height: 250;
+      background-color: rgb(213, 218, 218);
+  }
+
+  .navegacion{
+      list-style-position: inside;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      font-style: italic;
+      display:inline;
+      margin: 5px;
+      padding: 5px;
+      background-color: rgb(213, 218, 218);
+  }
+  
+  footer div h2{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      font-style: italic;
+      width: 100;
+      text-decoration: none;
+      text-align: center;
+      color: black;
+      padding: 10px;
+      
+  }
+
+  .encabezado__lista{
+      background-color: rgb(213, 218, 218)
+  }
+
+  .aside{
+      width: 100%;
+  }
+}
+
+
+@media screen and (max-width:500px){
+
+  .catalogo{
+      width: 100%;
+      height: 1400px;
+      border: 4px black solid;
+      margin: 3px;
+      border-radius: 5px;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-auto-rows:220px;
+  }
+
+  .catalogo div{
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+      background-color: rgb(213, 218, 218);
+      -webkit-box-shadow: 11px 11px 15px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 11px 11px 15px 0px rgba(0,0,0,0.75);
+  box-shadow: 11px 11px 15px 0px rgba(0,0,0,0.75);
+  }
+
+  .catalogo div h4{
+      display: flex;
+      justify-content: center;
+  }
+  
+  
+  .catalogo img{
+      width: 100%;
+      height: 140px;
+      display: flex;
+      align-items: first baseline;
+  }
+  
+  
+  .catalogo__contenedor-1 a{
+      width: 100%;
+      height: 20px;
+      background-color: rgb(206, 138, 55);
+      color: black;
+      font-family: 'Montserrat', sans-serif;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+  }
+
+  .catalogo__contenedor-1 img{
+      width:  100%;
+      height: 150px;
+
+  }
+  
+  .catalogo__contenedor-1 h4{
+      width: 100%;
+      height: 30px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      background-color: rgb(206, 138, 55);
+      display: flex;
+      align-items:flex-start;
+  }
+  .catalogo__contenedor-2 a{
+      width: 100%;
+      height: 20px;
+      background-color: rgb(206, 138, 55);
+      color: black;
+      font-family: 'Montserrat', sans-serif;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+  }
+  
+  .catalogo__contenedor-2 h4{
+      font-family: 'Montserrat', sans-serif;
+      background-color: rgb(206, 138, 55);
+  }
+
+  .catalogo__contenedor-2 img{
+      width:  100%;
+      height: 145px;
+
+  }
+
+  .catalogo__contenedor-3 img{
+      width:  100%;
+      height: 160px;
+
+  }
+  
+  
+  .catalogo__contenedor-3 a{
+      width: 100%;
+      height: 20px;
+      background-color: rgb(206, 138, 55);
+      color: black;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+  }
+  
+  .catalogo__contenedor-3 h4{
+      width: 100%;
+      height: 25px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 18px;
+      background-color: rgb(206, 138, 55);
+  }
+  
+  
+  
+  .catalogo__contenedor-4 a{
+      width: 100%;
+      height: 20px;
+      background-color: rgb(206, 138, 55);
+      color: black;
+      font-family: 'Montserrat', sans-serif;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+  }
+
+  .catalogo__contenedor-4 img{
+      width:  100%;
+      height: 145px;
+
+  }
+  
+  .catalogo__contenedor-4 h4{
+      font-family: 'Montserrat', sans-serif;
+      background-color: rgb(206, 138, 55);
+  }
+  
+  
+  .catalogo__contenedor-5 a{
+      width: 100%;
+      height: 20px;
+      background-color: rgb(206, 138, 55);
+      color: black;
+      font-family: 'Montserrat', sans-serif;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+  }
+  
+  .catalogo__contenedor-5 h4{
+      width:  100%;
+      height: 25px;
+      font-family: 'Montserrat', sans-serif;
+      background-color: rgb(206, 138, 55);
+  }
+
+  .catalogo__contenedor-5 img{
+      width:  100%;
+      height: 155px;
+
+  }
+  
+  
+  .catalogo__contenedor-6 a{
+      width: 100%;
+      height: 20px;
+      background-color: rgb(206, 138, 55);
+      color: black;
+      font-family: 'Montserrat', sans-serif;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+  }
+  
+  .catalogo__contenedor-6 h4{
+      font-family: 'Montserrat', sans-serif;
+      background-color: rgb(206, 138, 55);
+  }
+
+  .catalogo__contenedor-6 img{
+      width:  100%;
+      height: 145px;
+
+  }
+  
+
+}
+
+@media screen and (max-width:380px){
+  .grid{
+      width: 100%;
+      margin: 0;
+      display: grid;
+      grid-template-rows: 60px 580px 250px 220px 100px;
+      grid-template-columns: 1fr;
+      grid-template-areas: 
+      "nav"
+      "header"
+      "aside"
+      "footer"
+      
+  }
+
+  .frente{
+      width: 100%;
+      height: 355px;
+  }
+
+  .frente img{
+      width: 100%;
+      height: 350px;
+      padding: 5px;
+  }
+
+  .frente__productos{
+      width: 100%;
+      height: 200px;
+  }
+
+  .carro{
+      display: none;
+  }
+
+  .tarejtas img{
+      width: 100%;
+  }
+  
+  .aside{
+      width: 100%;
+      height: 300px;
+  }
+
+  .navegacion__lista{
+      list-style: none;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      font-style: italic;
+      margin: 1px;
+      padding: 1px;
+      text-align: center;
+      background-color: rgb(213, 218, 218);
+  }
+
+  footer div h2{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      font-style: italic;
+      width: 100;
+      text-decoration: none;
+      text-align: center;
+      color: black;
+      padding: 10px;
+  }
+
+  .encabezado{
+      width: 100%;
+      height: 100px;
+  }
+
+
+  .encabezado__lista{
+      list-style: none;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      font-style: italic;
+      margin: 1px;
+      padding: 1px;
+      text-align: center;
+      background-color: rgb(213, 218, 218);
+  }
+
+  .ferre h2{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 100;
+      font-style: italic;
+      text-align: center;
+  }
+
+  .ferre h3{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 100;
+      font-style: italic;
+      text-align: center;
+      
+  }
+
+  .ferre p{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 100;
+      font-style: italic;
+  }
+
+  .footer{
+      height: 300px;
+  }
+
+  .piedepagina{
+      height: 90px;
+  }
+  .piedepagina img{
+      height: 60px;
+  }
 }

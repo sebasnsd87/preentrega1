@@ -32,67 +32,67 @@
 <body>
   <header>
 
-    <!--Navbar-->
-    <section class="navegador">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <!--Navbar-->
+   <section class="navegador">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html">INICIO</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="../pages/productos.html">PRODUCTOS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../pages/servicios.html">SERVICIOS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../pages/acercade.html">ACERCA DE</a>
-                </li>
-            </ul>
-          </div>
+            <a class="navbar-brand" href="../index.html">INICIO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/productos.html">PRODUCTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/servicios.html">SERVICIOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/acercade.html">ACERCA DE</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        
+
         <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-          <button class="btn btn-outline-success" type="submit">Buscar</button>
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
         </form>
-      </nav>
-    </section>
+    </nav>
+</section>
     <!--Comenzamos-->
-    <section class="frente">
+    <section class="frente__productos">
       <img src="../img/EmilioContacto-200.png" alt="logocontacto">
     </section>
     <section class="dejanos">
       <h2>DEJANOS TU MENSAJE!!</h2>
     </section>
     <section class="mensaje container d-flex">
-      <form class="formulario" id="formulario" action="" method="" enctype="">
-        <div>
-            <input class="input" type="text" name="nombre" id="nombre" placeholder="Nombre">
-        </div>
-        <div>
-            <input class="input" type="text" name="apellido" id="apellido" placeholder="Apellido">
-        </div>
-        <div>
-            <input class="input" type="text" name="telefono" id="telefono" placeholder="Telefono">
-        </div>
-        <div>
-            <input class="input" type="email" name="email" id="email" placeholder="Email">
-        </div>
-        <div class="textarea">
-            <textarea name="" id="mensaje" cols="37" rows="10" placeholder="Dejanos tu mensaje"></textarea>
-        </div>
-        <div>
-            <button type="submit">Enviar</button>
-        </div>
+    <form class="formu" id="formulario">
+      <div class="cuadro">
+      <label class="contacto" for="nombre">Nombre:</label>
+      <input class="ingreso" type="text" id="nombre" name="nombre" required>
+    
+      <label class="contacto" for="apellido">Apellido:</label>
+      <input class="ingreso" type="text" id="apellido" name="apellido" required>
+    
+      <label class="contacto" for="telefono">Teléfono:</label>
+      <input class="ingreso" type="tel" id="telefono" name="telefono" required>
+    
+      <label class="contacto" for="email">Correo electrónico:</label>
+      <input class="ingreso" type="email" id="email" name="email" required>
+
+      <label class="contacto" for="mensaje">Mensaje:</label>
+      <textarea class="ingreso" id="mensaje" name="mensaje"></textarea>
+    
+      <button class="boton" type="submit">Enviar</button>
     </form>
+    </div>
   </section>
   </header>
   <main class="ubicacion">
@@ -103,23 +103,28 @@
         referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
   </main>
-  <footer class="footerContacto">
-    <section class="piedepaginaContacto">
-        <a href="https://es-la.facebook.com/" target="_blank"><img src="../img/facebook.png" alt="Icono Facebook"></a>
-        <a href="https://services.tochat.be/es/api/business/send/0eb27634-f70f-4b4a-bde5-ad7ed90abb95" target="_blank"><img src="../img/whatsapp.png" alt="Icono Whatsapp"></a>
-        <a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram.png" alt="Icono Instagram"></a>
+  <footer class="footer">
+    <section class="piedepagina">
+        <a href="https://es-la.facebook.com/" target="_blank"><img src="../img/facebook.png"
+                alt="Icono Facebook"></a>
+        <a href="https://services.tochat.be/es/api/business/send/0eb27634-f70f-4b4a-bde5-ad7ed90abb95"
+            target="_blank"><img src="../img/whatsapp.png" alt="Icono Whatsapp"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram.png"
+                alt="Icono Instagram"></a>
     </section>
-    <section class="tarjetas-credito">
+    <section class="piedepaginaTitulo">
         <h2>ACEPTAMOS TODAS LAS TARJETAS Y METODOS DE PAGO</h2>
+    </section>
+    <section class="tarjetas">
         <img src="../img/tarjetasnuevologo.png" alt="tarjetas">
     </section>
-    <section class="navegacionContacto">
+    <section class="navegacion">
         <ul class="navegacion__lista">
             <li><a href="../index.html">INICIO</a></li>
-            <li><a href="./productos.html">PRODUCTOS</a></li>
-            <li><a href="./contacto.html">CONTACTO</a></li>
-            <li><a href="./acercade.html">ACERCA DE NOSOTROS</a></li>
-            <li><a href="./servicios.html">SERVICIOS</a></li>
+            <li><a href="../pages/productos.html">PRODUCTOS</a></li>
+            <li><a href="../pages/servicios.html">SERVICIOS</a></li>
+            <li><a href="../pages/contacto.html">CONTACTO</a></li>
+            <li><a href="../pages/acercade.html">ACERCA DE NOSOTROS</a></li>
         </ul>
         <h6>Copyright®2023 SERVIOWEB</h6>
     </section>

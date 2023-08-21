@@ -41,23 +41,6 @@
   height: 600px;
 }
 
-.navbar{
-  text-align: center;
-  padding: 20px;
-  background-color: rgb(213, 218, 218);
-}
-
-.form-control{
-  border: 2px solid black;
-  border-radius: 5px;
-}
-
-.btn{
-  border: 2px solid black;
-  border-radius: 5px;
-}
-
-
 .hero{
   grid-area: header;
   background-color: rgb(213, 218, 218);
@@ -84,6 +67,11 @@
 
 .frente__productos{
   text-align: center;
+}
+
+.frente__productos img{
+  width: 350px;
+  height: 350px;
 }
 
 .ferre{
@@ -136,16 +124,34 @@
   margin: 0;
 }
 
-.mensaje{
-  display: flex;
-  justify-content: center;
-}
 
 .dejanos{
   text-align: center;
   font-family: 'DynaPuff', cursive;
   font-size: 20px;
   margin: 10px;
+}
+
+.formu{
+  width: 300px;
+}
+
+.contacto{
+  color: black;
+  text-align: center;
+  font-family: 'DynaPuff', cursive;
+  font-size: 20px;
+  margin: 10px;
+}
+
+.ingreso{
+  border: 2px solid black !important;
+  padding: 20px;
+}
+
+#mensaje {
+  width: 100%;
+  height: 150px;
 }
 
 #cesta-carrito {
@@ -248,7 +254,7 @@ select {
   top: 20px;
   right: 20px;
   font-size: 20px;
-  color: rgb(225, 76, 65) !important;
+  color: rgb(225, 76, 65);
   border: none;
   background-color: white;
 }
@@ -258,7 +264,7 @@ select {
   top: 20px;
   right: 20px;
   font-size: 20px;
-  color: rgb(225, 76, 65) !important;
+  color: rgb(225, 76, 65);
   border: none;
   background-color: white;
 }
@@ -349,18 +355,6 @@ select {
 }
 
 
-.mensaje div{
-  color: black;
-  display: flex;
-  justify-content:center;
-  background-color: rgb(213, 218, 218) ;
-}
-
-.mensaje div label{
-  font-family: 'Montserrat', sans-serif;
-
-}
-
 .ubicacion iframe{
   width: 100%;
 }
@@ -404,7 +398,6 @@ select {
   width: 100%;
   height: 150px;
 }
-
 /*---------FOOTER------------*/
 
 .footer{
@@ -425,21 +418,27 @@ footer div{
   background-color: rgb(213, 218, 218);
 }
 
-.tarjetas img{
-  width: 90%;
-  height: 100vw;
+.piedepagina{
   display: flex;
-  align-items: center;
+  justify-content:space-around;
+  height: 100px;
+  padding: 10px;
+}
+
+.piedepaginaTitulo{
+  font-size: 20px;
+  text-align: center;
 }
 
 
-footer div h2{
-  font-family: 'Montserrat', sans-serif;
-  width: 600;
-  text-decoration: none;
+.piedepagina a:hover{
+  transform: scale(1.1);
+}
+
+.tarjetas img{
+  width: 100%;
+  height: 100px;
   text-align: center;
-  color: black;
-  padding: 20px;
 }
 
 
@@ -450,29 +449,20 @@ footer div h2{
   text-align: center;
 }
 
-.navegacion__lista ul li{
+.navegacion__lista li{
   list-style: none;
   display: inline;
   margin: 20px 10px 20px 10px;
   padding: 10px;
 }
 
-.navegacion__lista ul li a{
+.navegacion__lista li a{
   color: black;
   padding: 10px;
   text-decoration: none;
   text-align: center;
 }
 
-.piedepagina{
-  display: flex;
-  justify-content:space-around;
-  height: 100px;
-}
-
-.piedepagina a:hover{
-  transform: scale(1.1);
-}
 
 
 /*------MEDIA QUERYS--------*/

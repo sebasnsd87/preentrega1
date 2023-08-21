@@ -53,6 +53,28 @@
   background-color: rgb(213, 218, 218);
 }
 
+#cesta-carrito {
+  border: none;
+  color: black;
+  font-size: 15px;
+  background-color: white;
+  transition: all .3s;
+}
+
+.fas{
+  padding: 10px;
+}
+
+#cesta-carrito:hover {
+  cursor: pointer;
+  color: white;
+  background-color: rgb(225, 76, 65);
+}
+
+#cesta-carrito:focus {
+  outline: none;
+}
+
 .frente{
   text-align: center;
   width: 100%;
@@ -125,6 +147,7 @@
 }
 
 
+
 .dejanos{
   text-align: center;
   font-family: 'DynaPuff', cursive;
@@ -154,27 +177,7 @@
   height: 150px;
 }
 
-#cesta-carrito {
-  border: none;
-  color: black;
-  font-size: 15px;
-  background-color: white;
-  transition: all .3s;
-}
 
-.fas{
-  padding: 10px;
-}
-
-#cesta-carrito:hover {
-  cursor: pointer;
-  color: white;
-  background-color: rgb(225, 76, 65);
-}
-
-#cesta-carrito:focus {
-  outline: none;
-}
 
 #producto-contenedor {
   display: grid;

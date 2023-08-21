@@ -23,51 +23,64 @@ modalCarrito.addEventListener('click', (e) => {
 })
 
 const btn1 = document.getElementById('btn1')
-
-btn1.addEventListener('click', () => {
-  Swal.fire({
-    title: 'Desea confirmar su compra?',
-    text: "SE VA A REALIZAR EL PAGO!",
-    icon: 'warning',
-    showCancelButton: true,
-    confirmButtonColor: '#3085d6',
-    cancelButtonColor: '#d33',
-    confirmButtonText: 'SI',
-    cancelButtonText: 'NO'
-  }).then((result) => {
-    if (result.isConfirmed) {
-      carrito = []
-      pintarCarrito(carrito)
-      actualizarTotalesCarrito(carrito)
-      Swal.fire(
-        'COMPRA REALIZADA',
-        'success'
-      )
-    }
-  })
-})
 const btn2 = document.getElementById('btn2')
 
-btn2.addEventListener('click', () => {
+btn1.addEventListener(`click`, () => {
+  if(carrito.length > 0) {
   Swal.fire({
-    title: 'Esta seguro?',
-    text: "Se va a vaciar el carrito!",
-    icon: 'warning',
-    showCancelButton: true,
-    confirmButtonColor: '#3085d6',
-    cancelButtonColor: '#d33',
-    confirmButtonText: 'SI',
-    cancelButtonText: 'NO'
+  title: `Desea confirmar su compra?`,
+  text: `SI confirma, NO, desea seguir comprando !`,
+  icon: `warning`,
+  showCancelButton: true,
+  confirmButtonColor: `#3085d6`,
+  cancelButtonColor: `#d33`,
+  confirmButtonText: `SI`,
+  cancelButtonText: `NO`
   }).then((result) => {
-    if (result.isConfirmed) {
-      carrito = []
-      pintarCarrito(carrito)
-      actualizarTotalesCarrito(carrito)
-      Swal.fire(
-        'Se vacio el carrito',
-        'success'
-      )
-    }
-  })
+  if (result.isConfirmed) {
+  carrito = []
+  pintarCarrito(carrito)
+  actualizarTotalesCarrito(carrito)
+  Swal.fire(
+        `Se realizo la compra`,
+        `success`
+        )
+      }
+    })
+  } else {
+    Swal.fire({
+    text: `No hay productos en el carrito!`,
+    icon: `error`,
+    })  
+  } 
 })
 
+btn2.addEventListener(`click`, () => {
+  if(carrito.length > 0) {
+  Swal.fire({
+  title: `Esta seguro?`,
+  text: `Se va a vaciar el carrito!`,
+  icon: `warning`,
+  showCancelButton: true,
+  confirmButtonColor: `#3085d6`,
+  cancelButtonColor: `#d33`,
+  confirmButtonText: `SI`,
+  cancelButtonText: `NO`
+  }).then((result) => {
+  if (result.isConfirmed) {
+  carrito = []
+  pintarCarrito(carrito)
+  actualizarTotalesCarrito(carrito)
+  Swal.fire(
+        `Se vacio el carrito`,
+        `success`
+        )
+      }
+    })
+  } else {
+    Swal.fire({
+    text: `No hay productos en el carrito!`,
+    icon: `error`,
+    })  
+  } 
+})

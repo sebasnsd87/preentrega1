@@ -21,6 +21,9 @@ header {
       color: black;
     }
     .navegador {
+      .navbar{
+        padding: 35px;
+      }
       .nav-link{
         font-family: 'DynaPuff', cursive;
       }
@@ -28,32 +31,6 @@ header {
         font-family: 'DynaPuff', cursive;
       }
     }
-}
-
-.dejanos{
-  text-align: center;
-  font-family: 'DynaPuff', cursive;
-  font-size: 20px;
-  margin: 10px;
-}
-
-.nolan{
-  background-color: black;
-  text-align: center;
-  font-family: 'DynaPuff', cursive;
-  color: blanchedalmond;
-  width: 200px;
-  display: flex;
-  justify-content: center;
-}
-
-.abuela{
-   border:solid black 5px;
-   width: 200px;
-   margin: 5px;
-   padding: 5px;
-   display: flex;
-   justify-content: center;
 }
 
 footer{
@@ -97,8 +74,10 @@ p {
 }
 
 .card {
-  max-width: 30%;
+  max-width: 250px;
   padding: 10px;
+  display: flex;
+  justify-content:space-between;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
@@ -106,7 +85,7 @@ p {
 select {
   display: inline;
   text-align: center;
-  border: 1px solid lightskyblue;
+  border: 1px solid rgb(3, 43, 69);
 }
 
 .modal-contenedor {
@@ -160,7 +139,7 @@ select {
   background-color: white;
 }
 
-.modal-carrito #btn1 {
+.modal-carrito #btn {
   position: absolute;
   top: 20px;
   right: 20px;

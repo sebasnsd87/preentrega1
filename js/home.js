@@ -1,4 +1,4 @@
-const pintarProductos = (data) => {
+/*const pintarProductos = (data) => {
     const contenedor = document.getElementById("producto-contenedor");
 
     data.forEach(producto => {
@@ -7,11 +7,38 @@ const pintarProductos = (data) => {
       div.innerHTML += `<div class="card-image">
                           <img src=${producto.imagen}>
                           <span class="card-title">${producto.nombre}</span>
-                          <a class="btn-floating halfway-fab wabes-effect waves-light red"><i id=${producto.id} class="material-icons agregar">add_shopping_cart</i></a>
+                        <div class="card-content">
+                            <p>${producto.desc}</p>
+                            <p>$${producto.precio}</p>
+                        </div>
+                        <div>
+                        <a class="btn-floating halfway-fab wabes-effect waves-light red"><i id=${producto.id} class="material-icons agregar">add_shopping_cart</i></a>
+                        </div>
+                       `
+      contenedor.appendChild(div);
+    });
+  };*/
+
+  const pintarProductos = (data) => {
+    const contenedor = document.getElementById("producto-contenedor");
+  
+    const productosEnCarrito = [];
+  
+    data.forEach(producto => {
+      const div = document.createElement('div');
+      div.classList.add('card');
+      div.innerHTML += `<div class="card-image">
+                          <img src=${producto.imagen}>
+                          <span class="card-title">${producto.nombre}</span>
                         </div>
                         <div class="card-content">
                             <p>${producto.desc}</p>
-                            <p>${producto.precio}</p>
+                            <p>$${producto.precio}</p>
+                        </div>
+                        <div class="card-action">
+                          <a class="btn-floating halfway-fab wabes-effect waves-light red">
+                            <i id=${producto.id} class="material-icons agregar">add_shopping_cart</i>
+                          </a>
                         </div>
                        `
       contenedor.appendChild(div);

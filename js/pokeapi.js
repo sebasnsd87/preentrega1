@@ -7,15 +7,6 @@ button.addEventListener("click", (e) => {
     traerPokemon(input.value);
 })
 
-
-//function traerPokemon(pokemon) {
-  //  fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}/`)
-    //.then((res) => res.json())
-    //.then((data) => {
-      //  crearPokemon(data);
-    //})
-//}
-
 function crearPokemon(pokemon) {
     const img = document.createElement('img');
     img.src = pokemon.sprites.front_default;

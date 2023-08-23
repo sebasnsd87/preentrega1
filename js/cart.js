@@ -1,4 +1,8 @@
+//ARRAY DE OBJETOS
+
 let carrito = []
+
+//CREAMOS EL CONTENEDOR 
 
 const productoContenedor = document.getElementById("producto-contenedor");
 
@@ -7,6 +11,8 @@ productoContenedor.addEventListener('click', (e) => {
     validarProductoEnCarrito(e.target.id);
   }
 })
+
+//VALIDAMOS EL PRODUCTO, SI SE ENCUENTRA EN EL CARRITO Y SI ESTA REPETIDO
 
 const validarProductoEnCarrito = (id) => {
   const estaRepetido = carrito.some(producto => producto.id == id)
@@ -24,6 +30,9 @@ const validarProductoEnCarrito = (id) => {
     actualizarTotalesCarrito(carrito)
   }
 }
+
+
+//PINTAMOS EL CARRITO
 
 const pintarProductoCarrito = (producto) => {
   const contenedor = document.getElementById('carrito-contenedor')
@@ -58,12 +67,16 @@ const pintarCarrito = (carrito) => {
   });
 }
 
+//ELIMINAR UN PRODUCTO
+
 const eliminarProductoCarrito = (id) => {
   const productoIndex = carrito.findIndex(producto => producto.id == id)
   carrito.splice(productoIndex, 1)
   pintarCarrito(carrito)
   actualizarTotalesCarrito(carrito)
 }
+
+//ACTUALIZAR EL CARRITO
 
 const actualizarTotalesCarrito = (carrito) => {
   const totalCantidad = carrito.reduce((acc, item) => acc + item.cantidad, 0)

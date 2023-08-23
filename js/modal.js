@@ -22,8 +22,12 @@ modalCarrito.addEventListener('click', (e) => {
   }
 })
 
+//BOTON DE COMPRAR Y VACIAR EL CARRITO
+
 const btn1 = document.getElementById('btn1')
 const btn2 = document.getElementById('btn2')
+
+//BOTON COMPRA
 
 btn1.addEventListener(`click`, () => {
   if (carrito.length > 0) {
@@ -55,6 +59,8 @@ btn1.addEventListener(`click`, () => {
   }
 })
 
+
+//BOTON VACIAR
 
 btn2.addEventListener('click', () => {
   if (carrito.length > 0) {

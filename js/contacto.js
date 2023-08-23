@@ -40,8 +40,4 @@ formulario.addEventListener("submit", function(event) {
     formulario.reset()
 });
 
-//const btn = document.getElementById("cesta-carrito")
 
-//if (btn !== null) {
-  
-  //}
